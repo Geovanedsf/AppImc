@@ -21,7 +21,6 @@ class MainActivity : AppCompatActivity() {
         binding.calcular.setOnClickListener {
             calcularIMC()
         }
-
     }
 
     fun calcularIMC() {
@@ -45,6 +44,5 @@ class MainActivity : AppCompatActivity() {
         if (resultado > 30) {
             binding.resultado.text = "resultado: Obesidade %.2f".format(resultado)
         }
-
     }
 }

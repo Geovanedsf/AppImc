@@ -7,6 +7,16 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="189dp"
+        android:text="Calcule seu IMC"
+        app:layout_constraintEnd_toEndOf="@+id/altura"
+        app:layout_constraintStart_toStartOf="@+id/altura"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <EditText
         android:id="@+id/altura"
         android:layout_width="wrap_content"
@@ -33,35 +43,32 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/altura" />
 
-    <Button
-        android:id="@+id/calcular"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="79dp"
-        android:text="CALCULAR"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/peso" />
-
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="189dp"
-        android:text="Calcule seu IMC"
-        app:layout_constraintEnd_toEndOf="@+id/altura"
-        app:layout_constraintStart_toStartOf="@+id/altura"
-        app:layout_constraintTop_toTopOf="parent" />
-
     <TextView
         android:id="@+id/resultado"
         android:layout_width="0dp"
         android:layout_height="36dp"
+        android:layout_marginBottom="260dp"
         android:gravity="center"
+        android:hint="RESULTADO"
+        android:textStyle="bold"
+        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/calcular" />
+        app:layout_constraintTop_toBottomOf="@+id/peso"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <Button
+        android:id="@+id/calcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="CALCULAR"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/resultado" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
