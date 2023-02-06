@@ -18,14 +18,14 @@ class MainActivity : AppCompatActivity() {
 
         setContentView(view)
 
-        binding.calcular.setOnClickListener {
-            calcularIMC()
+        binding.buttonCalcular.setOnClickListener {
+            calcularImc()
         }
     }
 
-    fun calcularIMC() {
-        var altura: Float = binding.altura.text.toString().toFloat()
-        var peso: Float = binding.peso.text.toString().toFloat()
+    fun calcularImc() {
+        var altura: Float = binding.txtAltura.text.toString().toFloat()
+        var peso: Float = binding.txtPeso.text.toString().toFloat()
 
          val resultado = peso / (altura * altura)
 
